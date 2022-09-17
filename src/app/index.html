@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="../assets/img/l.svg" type="image/x-icon">
+    <title>Métodos</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-bold">
+                <img src="../assets/img/l.svg" alt="kids" width="50">
+                <span class="text-uppercase" style="font-family: cursive;">Métodos Sort</span>
+            </a>
+        </div>
+    </nav>
+
+    <p></p>
+
+    <div class="container bg-light rounded justify-content-center">
+
+                <table class="table table-striped rounded">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Método</th>
+                            <th scope="col">Tiempo de ejecución</th>
+                            <th scope="col">Autor</th>       
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td><button type="button" class="btn btn-primary">Burbuja</button></td>
+                            <td><span id="tBurbuja"></span> ms</td>
+                            <td>Edward H</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td><button type="button" class="btn btn-primary">Burbuja recursiva</button></td>
+                            <td><span id="tBurbujaR"></span> ms</td>
+                            <td>Susobhan AKhuli</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td><button type="button" class="btn btn-primary">Selección</button></td>
+                            <td><span id="tSeleccion"></span> ms</td>
+                            <td>akshitsaxenaa09</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td><button type="button" class="btn btn-primary">Inserción</button></td>
+                            <td><span id="tInsercion"></span> ms</td>
+                            <td>Mayank Tyagi</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td><button type="button" class="btn btn-primary">Inserción recursiva</button></td>
+                            <td><span id="tIR"></span> ms</td>
+                            <td>rag2127</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td><button type="button" class="btn btn-primary">ShellSort</button></td>
+                            <td><span id="tSeleccion"></span> ms</td>
+                            <td>akshitsaxenaa09</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td><button type="button" class="btn btn-primary">BucketSort</button></td>
+                            <td><span id="tSeleccion"></span> ms</td>
+                            <td>akshitsaxenaa09</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td><button type="button" class="btn btn-primary">MergeSort</button></td>
+                            <td><span id="tSeleccion"></span> ms</td>
+                            <td>akshitsaxenaa09</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td><button type="button" class="btn btn-primary">QuickSort</button></td>
+                            <td><span id="tSeleccion"></span> ms</td>
+                            <td>akshitsaxenaa09</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td><button type="button" class="btn btn-primary">StoogeSort</button></td>
+                            <td><span id="tSeleccion"></span> ms</td>
+                            <td>akshitsaxenaa09</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td><button type="button" class="btn btn-primary">HeapSort</button></td>
+                            <td><span id="tSeleccion"></span> ms</td>
+                            <td>akshitsaxenaa09</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td><button type="button" class="btn btn-primary">Bitonic Sort</button></td>
+                            <td><span id="tSeleccion"></span> ms</td>
+                            <td>akshitsaxenaa09</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td><button type="button" class="btn btn-primary">Gnome Sort</button></td>
+                            <td><span id="tSeleccion"></span> ms</td>
+                            <td>akshitsaxenaa09</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td><button type="button" class="btn btn-primary">Binary Insertion Sort</button></td>
+                            <td><span id="tSeleccion"></span> ms</td>
+                            <td>akshitsaxenaa09</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td><button type="button" class="btn btn-primary">Strand Sort</button></td>
+                            <td><span id="tSeleccion"></span> ms</td>
+                            <td>akshitsaxenaa09</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+      </div>
+ 
+    <script src="js/burbuja.js"></script>
+    <script src="js/burbujaR.js"></script>
+    <script src="js/seleccion.js"></script>
+    <script src="js/insercion.js"></script>
+    <script src="js/insercionR.js"></script>
+    <script src="js/shellsort.js"></script>
+    <script src="js/bucketsort.js"></script>
+    <script src="js/mergesort.js"></script>
+    <script src="js/quicksort.js"></script>
+    <script src="js/stoogesort.js"></script>
+    <script src="js/heapsort.js"></script>
+    <script src="js/bitonicsort.js"></script>
+    <script src="js/gnomesort.js"></script>
+    <script src="js/binaryisort.js"></script>
+    <script src="js/strandsort.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
