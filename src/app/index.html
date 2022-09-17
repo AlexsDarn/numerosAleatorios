@@ -10,6 +10,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="../assets/img/l.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <title>Métodos</title>
 </head>
 
@@ -27,111 +28,116 @@
 
     <div class="container bg-light rounded justify-content-center">
 
-                <table class="table table-striped rounded">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Método</th>
-                            <th scope="col">Tiempo de ejecución</th>
-                            <th scope="col">Autor</th>       
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                        <tr>
-                            <th scope="row">1</th>
-                            <td><button type="button" class="btn btn-primary">Burbuja</button></td>
-                            <td><span id="tBurbuja"></span> ms</td>
-                            <td>Edward H</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td><button type="button" class="btn btn-primary">Burbuja recursiva</button></td>
-                            <td><span id="tBurbujaR"></span> ms</td>
-                            <td>Susobhan AKhuli</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td><button type="button" class="btn btn-primary">Selección</button></td>
-                            <td><span id="tSeleccion"></span> ms</td>
-                            <td>akshitsaxenaa09</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td><button type="button" class="btn btn-primary">Inserción</button></td>
-                            <td><span id="tInsercion"></span> ms</td>
-                            <td>Mayank Tyagi</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td><button type="button" class="btn btn-primary">Inserción recursiva</button></td>
-                            <td><span id="tIR"></span> ms</td>
-                            <td>rag2127</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td><button type="button" class="btn btn-primary">ShellSort</button></td>
-                            <td><span id="tSeleccion"></span> ms</td>
-                            <td>akshitsaxenaa09</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td><button type="button" class="btn btn-primary">BucketSort</button></td>
-                            <td><span id="tSeleccion"></span> ms</td>
-                            <td>akshitsaxenaa09</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">8</th>
-                            <td><button type="button" class="btn btn-primary">MergeSort</button></td>
-                            <td><span id="tSeleccion"></span> ms</td>
-                            <td>akshitsaxenaa09</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td><button type="button" class="btn btn-primary">QuickSort</button></td>
-                            <td><span id="tSeleccion"></span> ms</td>
-                            <td>akshitsaxenaa09</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">10</th>
-                            <td><button type="button" class="btn btn-primary">StoogeSort</button></td>
-                            <td><span id="tSeleccion"></span> ms</td>
-                            <td>akshitsaxenaa09</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">11</th>
-                            <td><button type="button" class="btn btn-primary">HeapSort</button></td>
-                            <td><span id="tSeleccion"></span> ms</td>
-                            <td>akshitsaxenaa09</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">12</th>
-                            <td><button type="button" class="btn btn-primary">Bitonic Sort</button></td>
-                            <td><span id="tSeleccion"></span> ms</td>
-                            <td>akshitsaxenaa09</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">13</th>
-                            <td><button type="button" class="btn btn-primary">Gnome Sort</button></td>
-                            <td><span id="tSeleccion"></span> ms</td>
-                            <td>akshitsaxenaa09</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">14</th>
-                            <td><button type="button" class="btn btn-primary">Binary Insertion Sort</button></td>
-                            <td><span id="tSeleccion"></span> ms</td>
-                            <td>akshitsaxenaa09</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">15</th>
-                            <td><button type="button" class="btn btn-primary">Strand Sort</button></td>
-                            <td><span id="tSeleccion"></span> ms</td>
-                            <td>akshitsaxenaa09</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <table id="tt" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Método</th>
+                    <th scope="col">Tiempo de ejecución</th>
+                    <th scope="col">Autor</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td scope="row">1</td>
+                    <td><button type="button" class="btn btn-primary">Burbuja</button></td>
+                    <td><span id="tBurbuja"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/bubble-sort/">geeksforgeeks</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">2</td>
+                    <td><button type="button" class="btn btn-primary">Burbuja recursiva</button></td>
+                    <td><span id="tBurbujaR"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/recursive-bubble-sort/">Susobhan
+                            AKhuli</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">3</td>
+                    <td><button type="button" class="btn btn-primary">Selección</button></td>
+                    <td><span id="tSeleccion"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/selection-sort/">akshitsaxenaa09</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">4</td>
+                    <td><button type="button" class="btn btn-primary">Inserción</button></td>
+                    <td><span id="tInsercion"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/insertion-sort/">Mayank Tyagi</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">5</td>
+                    <td><button type="button" class="btn btn-primary">Inserción recursiva</button></td>
+                    <td><span id="tIR"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/recursive-insertion-sort/">rag2127</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">6</td>
+                    <td><button type="button" class="btn btn-primary">ShellSort</button></td>
+                    <td><span id="tShell"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/shellsort/">unknown2108</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">7</td>
+                    <td><button type="button" class="btn btn-primary">BucketSort</button></td>
+                    <td><span id="tBucket"></span> ms</td>
+                    <td><a target="_blank"
+                            href="https://www.tutorialspoint.com/program-to-implement-bucket-sort-in-javascript">AmitDiwan</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">8</td>
+                    <td><button type="button" class="btn btn-primary">MergeSort</button></td>
+                    <td><span id="tMerge"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/merge-sort/">SoumikMondal</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">9</td>
+                    <td><button type="button" class="btn btn-primary">QuickSort</button></td>
+                    <td><span id="tQuick"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/quick-sort/">Saurabh Jaiswal</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">10</td>
+                    <td><button type="button" class="btn btn-primary">StoogeSort</button></td>
+                    <td><span id="tStooge"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/stooge-sort/">geeksforgeeks</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">11</td>
+                    <td><button type="button" class="btn btn-primary">HeapSort</button></td>
+                    <td><span id="tHeap"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/heap-sort/">SoumikMondal</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">12</td>
+                    <td><button type="button" class="btn btn-primary">Bitonic Sort</button></td>
+                    <td><span id="tBit"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/bitonic-sort/">geeksforgeeks</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">13</td>
+                    <td><button type="button" class="btn btn-primary">Gnome Sort</button></td>
+                    <td><span id="tGnome"></span> ms</td>
+                    <td><a target="_blank"
+                            href="https://www.geeksforgeeks.org/gnome-sort-a-stupid-one/">geeksforgeeks</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">14</td>
+                    <td><button type="button" class="btn btn-primary">Binary Insertion Sort</button></td>
+                    <td><span id="tBinary"></span> ms</td>
+                    <td><a target="_blank"
+                            href="https://www.geeksforgeeks.org/binary-insertion-sort/">shivanisinghss2110</a></td>
+                </tr>
+                <tr>
+                    <td scope="row">15</td>
+                    <td><button type="button" class="btn btn-primary">Pancake Sort</button></td>
+                    <td><span id="tPancake"></span> ms</td>
+                    <td><a target="_blank" href="https://www.geeksforgeeks.org/pancake-sorting/">geeksforgeeks</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-      </div>
- 
     <script src="js/burbuja.js"></script>
     <script src="js/burbujaR.js"></script>
     <script src="js/seleccion.js"></script>
@@ -146,12 +152,23 @@
     <script src="js/bitonicsort.js"></script>
     <script src="js/gnomesort.js"></script>
     <script src="js/binaryisort.js"></script>
-    <script src="js/strandsort.js"></script>
+    <script src="js/pancake.js"></script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#tt').DataTable();
+        });
+    </script>
 </body>
 
 </html>
